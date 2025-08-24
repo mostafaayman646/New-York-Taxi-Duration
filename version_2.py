@@ -97,8 +97,8 @@ def prepare_data(df):
 
 
 if __name__ == '__main__':
-    train = pd.read_csv('split/train.csv')
-    test = pd.read_csv('split/val.csv')
+    train = pd.read_csv('train.csv')
+    test = pd.read_csv('val.csv')
     
     prepare_data(train)
     prepare_data(test)
