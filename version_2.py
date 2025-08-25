@@ -49,7 +49,7 @@ def plot(df):
     sns.pairplot(df, x_vars=columns[0], y_vars=columns[1], height=4, aspect=1, kind='scatter')
     plt.show()
 
-def remove_outliers(df, cols, k=2.1):
+def remove_outliers(df, cols, k=3):
     print(f"before removing outliers: {df.shape}")
     for col in cols:
         Q1 = df[col].quantile(0.25)
